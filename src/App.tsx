@@ -1,4 +1,4 @@
-import { Header } from "./Components/UI/Header";
+import { Header } from "./Components/Header";
 import "./App.css";
 
 export const App = () => {
