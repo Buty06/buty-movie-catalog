@@ -7,7 +7,26 @@ export const Header = () => {
     <header className="header">
       <img src={logo} alt="Logo" className="header_logo" />
 
-      <img src={menu} alt="Menu" className="header_menu_icon" />
+      <button className="header_menu_button">
+        <img src={menu} alt="Menu" className="header_menu_icon" />
+      </button>
+
+      <nav className="header_nav">
+        <ol className="header_links_container">
+          <a href="#" className="header_link">
+            <li>Elementos</li>
+          </a>
+          <a href="#" className="header_link">
+            <li>Elementos</li>
+          </a>
+          <a href="#" className="header_link">
+            <li>Elementos</li>
+          </a>
+          <a href="#" className="header_link">
+            <li>Elementos</li>
+          </a>
+        </ol>
+      </nav>
     </header>
   );
 };
