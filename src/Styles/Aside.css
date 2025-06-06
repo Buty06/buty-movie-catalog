@@ -1,0 +1,21 @@
+.aside {
+  background-color: rgb(32, 32, 32);
+  position: absolute;
+  width: 15rem;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  color: aliceblue;
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(15rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

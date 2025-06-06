@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Styles/App.css";
 import { Header } from "./Components/Header";
 import { Aside } from "./Components/Aside";
 import { Main } from "./Components/Main";
@@ -13,9 +13,12 @@ export const App: React.FC = () => {
 
   return (
     <>
-      //*Le pasamos al header una funcion como prop donde cambia el valor de
+      {/* //*Le pasamos al header una funcion como prop donde cambia el valor de */}
       <Header onToggleAside={() => setShowAside((prev) => !prev)}></Header>
-      {showAside && Aside}
+
+      {/*De esta forma evaluamos si es true o false que se ejecute el componente
+      o no */}
+      {showAside && <Aside></Aside>}
       <Main></Main>
       <Foother></Foother>
     </>
